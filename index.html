@@ -7,7 +7,7 @@
         const data = await response.json();
         let htmlString = '<ul>';
         for (let file of data) {
-          htmlString += `<li><a href="https://synthetichealth.github.io/synthea-sample-data/downloads/${file.path}">${file.name}</a></li>`;
+          htmlString += `<li><a href="https://synthetichealth.github.io/synthea-sample-data/${file.path}">${file.name}</a></li>`;
         }
         htmlString += '</ul>';
         document.getElementsByTagName('body')[0].innerHTML = htmlString;
